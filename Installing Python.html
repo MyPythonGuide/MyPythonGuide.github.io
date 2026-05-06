@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="icon.png" type="x-icon">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <title>Installing Python</title>
     </head>
     <body>
@@ -33,15 +34,15 @@
                     </p>
                 </div>
                 <div class="grid">
-                    <div class="box" onclick="showSection('windows')">🪟Installation for Windows</div>
-                    <div class="box" onclick="showSection('mac')">🍎Installation for MacOs</div>
-                    <div class="box" onclick="showSection('linux')">🐧Installation for Linux</div>
-                    <div class="box" onclick="showSection('android')">🤖Installation for Android</div>
+                    <div class="box" onclick="showSection('windows')">Installation for Windows</div>
+                    <div class="box" onclick="showSection('mac')">Installation for MacOs</div>
+                    <div class="box" onclick="showSection('linux')">Installation for Linux</div>
+                    <div class="box" onclick="showSection('android')">Installation for Android</div>
                 </div> <br><br><br><br>
                 <center><a href="index.html"><button>Home</button></a></center>
             </div>
             <div class="section" id="windows"><!--windows-->
-                <h2>🪟 How to Install Python on Windows?</h2>
+                <h2>How to Install Python on Windows?</h2>
                 <br>
                 <div>
                     <ol class="ol">
@@ -77,12 +78,14 @@
                     </ol>
                 </div>
                 <h3>You should see the installed Python version displayed.</h3>
-                <center><button onclick="showSection('Python installation')">Back</button>
+                <center>
+                    <button onclick="showSection('Python installation')">Back</button>
                     <a href="index.html"><button>Home</button></a>
+                    <a href="Python IDEs & Editors.html"><button>Next</button></a>
                 </center>
             </div>
             <div class="section" style="max-width: 1200px;" id="mac"><!--mac-->
-                <h2>🍎 How to Install Python on macOS?</h2>
+                <h2>How to Install Python on macOS?</h2>
                 <br>
                 <div>
                     <div><strong>Method 1: Using the Official Installer</strong>
@@ -114,12 +117,14 @@
 
                     </div>
                 </div>
-                <center><button onclick="showSection('Python installation')">Back</button>
+                <center>
+                    <button onclick="showSection('Python installation')">Back</button>
                     <a href="index.html"><button>Home</button></a>
+                    <a href="Python IDEs & Editors.html"><button>Next</button></a>
                 </center>
             </div>
             <div class="section" id="linux"><!--linux-->
-                <h2>🐧 How to Install Python on Linux?</h2>
+                <h2>How to Install Python on Linux?</h2>
                 <br>
                 <ol type="1">
                     <li>
@@ -164,12 +169,14 @@
                     <li>Fedora, CentOS: <br><code>sudo dnf install python3</code></li>
                     <li>Arch Linux: <br><code>sudo pacman -S python</code></li>
                 </ul>
-                <center><button onclick="showSection('Python installation')">Back</button>
+                <center>
+                    <button onclick="showSection('Python installation')">Back</button>
                     <a href="index.html"><button>Home</button></a>
+                    <a href="Python IDEs & Editors.html"><button>Next</button></a>
                 </center>
             </div>
             <div class="section" id="android"><!--android-->
-                <h2>🤖 How to Install Python on Android</h2>
+                <h2>How to Install Python on Android</h2>
                 <br>
                 <ol>
                     <li>
@@ -202,7 +209,7 @@
                             <code>numpy</code>, <code>pandas</code>, or <code>matplotlib</code>.</li></ul>
                     </li>
                 </ol>
-                <h3>📌 Why You Don’t Need to Install Python Separately on Android:</h3>
+                <h3>Why You Don’t Need to Install Python Separately on Android:</h3>
                 <p>On Windows, Mac, and Linux, Python needs to be installed system-wide because those operating systems 
                     don’t come with a built-in Python environment.
                 </p>
@@ -211,23 +218,16 @@
                      to write and run Python code, so there’s no need to manually install Python separately as you would on a computer
                      . You just install the app and start coding instantly.
                 </p>
-                <h4>✅ Conclusion:</h4>
+                <h4>Conclusion:</h4>
                 <p>With Pydroid 3 or similar apps, you can practice, write, and run Python 
                     anywhere on your Android device—no computer required!
                 </p>
-                <center><button onclick="showSection('Python installation')">Back</button>
+                <center>
+                    <button onclick="showSection('Python installation')">Back</button>
                     <a href="index.html"><button>Home</button></a>
+                    <a href="Python IDEs & Editors.html"><button>Next</button></a>
                 </center>
             </div>
         </div>
     </body>
-    <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </html>
